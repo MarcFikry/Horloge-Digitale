@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Gestion_Mode_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Gestion_Mode" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="539501fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="89"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/TB_Gestion_Mode/H" type="logic">
+      <obj_property name="ElementShortName">H</obj_property>
+      <obj_property name="ObjectShortName">H</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/btn3_mode" type="logic">
+      <obj_property name="ElementShortName">btn3_mode</obj_property>
+      <obj_property name="ObjectShortName">btn3_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/sw0" type="logic">
+      <obj_property name="ElementShortName">sw0</obj_property>
+      <obj_property name="ObjectShortName">sw0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/sw1" type="logic">
+      <obj_property name="ElementShortName">sw1</obj_property>
+      <obj_property name="ObjectShortName">sw1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/SWA" type="logic">
+      <obj_property name="ElementShortName">SWA</obj_property>
+      <obj_property name="ObjectShortName">SWA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/SWB" type="logic">
+      <obj_property name="ElementShortName">SWB</obj_property>
+      <obj_property name="ObjectShortName">SWB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/BP0" type="logic">
+      <obj_property name="ElementShortName">BP0</obj_property>
+      <obj_property name="ObjectShortName">BP0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/BP1" type="logic">
+      <obj_property name="ElementShortName">BP1</obj_property>
+      <obj_property name="ObjectShortName">BP1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/sw0_mode" type="logic">
+      <obj_property name="ElementShortName">sw0_mode</obj_property>
+      <obj_property name="ObjectShortName">sw0_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/sw1_reg" type="logic">
+      <obj_property name="ElementShortName">sw1_reg</obj_property>
+      <obj_property name="ObjectShortName">sw1_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/SWA_H" type="logic">
+      <obj_property name="ElementShortName">SWA_H</obj_property>
+      <obj_property name="ObjectShortName">SWA_H</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/SWB_H" type="logic">
+      <obj_property name="ElementShortName">SWB_H</obj_property>
+      <obj_property name="ObjectShortName">SWB_H</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/BP0_inc" type="logic">
+      <obj_property name="ElementShortName">BP0_inc</obj_property>
+      <obj_property name="ObjectShortName">BP0_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/BP1_dec" type="logic">
+      <obj_property name="ElementShortName">BP1_dec</obj_property>
+      <obj_property name="ObjectShortName">BP1_dec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/BP0_fnct" type="logic">
+      <obj_property name="ElementShortName">BP0_fnct</obj_property>
+      <obj_property name="ObjectShortName">BP0_fnct</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/BP1_Raz" type="logic">
+      <obj_property name="ElementShortName">BP1_Raz</obj_property>
+      <obj_property name="ObjectShortName">BP1_Raz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/mode" type="array">
+      <obj_property name="ElementShortName">mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/uut/btn3_old" type="logic">
+      <obj_property name="ElementShortName">btn3_old</obj_property>
+      <obj_property name="ObjectShortName">btn3_old</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gestion_Mode/uut/mode_int" type="array">
+      <obj_property name="ElementShortName">mode_int[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mode_int[1:0]</obj_property>
+   </wvobject>
+</wave_config>

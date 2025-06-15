@@ -1,0 +1,32 @@
+# Vivado-generated files and folders to ignore
+*.jou
+*.log
+*.str
+*.xml
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.Xil/
+*.webtalk/
+*.hw_emu/
+*.data/
+*.backup/
+*.ltx
+*.sdk/
+*.vitis/
+*.dcp
+*.dir/
+*.checkpoint
+*.xpr
+*.bif
+*.backup/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/

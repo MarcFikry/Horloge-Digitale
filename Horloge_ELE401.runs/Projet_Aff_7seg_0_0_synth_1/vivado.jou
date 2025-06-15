@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr  2 17:07:27 2025
+# Process ID: 12736
+# Current directory: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.runs/Projet_Aff_7seg_0_0_synth_1
+# Command line: vivado.exe -log Projet_Aff_7seg_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Projet_Aff_7seg_0_0.tcl
+# Log file: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.runs/Projet_Aff_7seg_0_0_synth_1/Projet_Aff_7seg_0_0.vds
+# Journal file: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.runs/Projet_Aff_7seg_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Projet_Aff_7seg_0_0.tcl -notrace

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr  2 20:13:34 2025
+# Process ID: 6028
+# Current directory: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8900 M:\UNI\L2\L2 S4\ELE401\Horloge_ELE401\Horloge_ELE401.xpr
+# Log file: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/vivado.log
+# Journal file: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.xpr}
+update_compile_order -fileset sources_1
+update_module_reference Projet_Gestion_Mode_0_0
+regenerate_bd_layout
+update_module_reference Projet_Minuteur_0_0
+update_module_reference Projet_Alarm_0_0
+regenerate_bd_layout
+create_bd_cell -type module -reference Horloge Horloge_1
+delete_bd_objs [get_bd_cells Horloge_1]
+create_bd_cell -type module -reference Minuteur Minuteur_1

@@ -1,0 +1,265 @@
+
+*** Running vivado
+    with args -log Projet_Horloge_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Projet_Horloge_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Projet_Horloge_0_0.tcl -notrace
+Command: synth_design -top Projet_Horloge_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'Projet_Horloge_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7804
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Projet_Horloge_0_0' [m:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.gen/sources_1/bd/Projet/ip/Projet_Horloge_0_0/synth/Projet_Horloge_0_0.vhd:79]
+INFO: [Synth 8-3491] module 'Horloge' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:6' bound to instance 'U0' of component 'Horloge' [m:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.gen/sources_1/bd/Projet/ip/Projet_Horloge_0_0/synth/Projet_Horloge_0_0.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'Horloge' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:15]
+	Parameter N bound to: 31 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTjrs_31' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 31 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTjrs_30' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'cptMN__parameterized1' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 30 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN__parameterized1' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTjrs_29' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'cptMN__parameterized3' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN__parameterized3' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 28 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTjrs_28' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'cptMN__parameterized5' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 28 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN__parameterized5' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTcsc' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'cptMN__parameterized7' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN__parameterized7' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 60 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTsec' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'cptMN__parameterized9' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 60 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN__parameterized9' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 60 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTmin' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:63]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPThrs' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'cptMN__parameterized11' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN__parameterized11' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTmoi' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'cptMN__parameterized13' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cptMN__parameterized13' (1#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:17]
+	Parameter N bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTane' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:66]
+	Parameter N bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'cptMN' declared at 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/cptMN.vhd:6' bound to instance 'CPTcie' of component 'cptMN' [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'Horloge' (2#1) [M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/new/Horloge.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Projet_Horloge_0_0' (3#1) [m:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.gen/sources_1/bd/Projet/ip/Projet_Horloge_0_0/synth/Projet_Horloge_0_0.vhd:79]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 38    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 23    
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 106   
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 17    
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 41    
+	   4 Input    1 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    29|
+|2     |LUT1   |    13|
+|3     |LUT2   |   104|
+|4     |LUT3   |    58|
+|5     |LUT4   |    96|
+|6     |LUT5   |   115|
+|7     |LUT6   |   239|
+|8     |FDCE   |    79|
+|9     |FDRE   |   123|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+------------------------+------+
+|      |Instance      |Module                  |Cells |
++------+--------------+------------------------+------+
+|1     |top           |                        |   856|
+|2     |  U0          |Horloge                 |   856|
+|3     |    CPTane    |cptMN__parameterized7   |    69|
+|4     |    CPTcie    |cptMN__parameterized7_0 |    58|
+|5     |    CPTcsc    |cptMN__parameterized7_1 |    34|
+|6     |    CPThrs    |cptMN__parameterized11  |    31|
+|7     |    CPTjrs_28 |cptMN__parameterized5   |    25|
+|8     |    CPTjrs_29 |cptMN__parameterized3   |    14|
+|9     |    CPTjrs_30 |cptMN__parameterized1   |    14|
+|10    |    CPTjrs_31 |cptMN                   |    13|
+|11    |    CPTmin    |cptMN__parameterized9   |    35|
+|12    |    CPTmoi    |cptMN__parameterized13  |    56|
+|13    |    CPTsec    |cptMN__parameterized9_2 |    35|
++------+--------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 999.293 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 999.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 999.293 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.runs/Projet_Horloge_0_0_synth_1/Projet_Horloge_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+INFO: [Common 17-1381] The checkpoint 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.runs/Projet_Horloge_0_0_synth_1/Projet_Horloge_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Projet_Horloge_0_0_utilization_synth.rpt -pb Projet_Horloge_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  4 16:24:35 2025...

@@ -1,0 +1,120 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0819",
+   "Default View_TopLeft":"-335,4",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port H -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port btn0_1k -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
+preplace port btn1_10k -pg 1 -lvl 0 -x 0 -y 650 -defaultsOSRD
+preplace port btn2_125k -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
+preplace port LED_mode_hrs -pg 1 -lvl 4 -x 1310 -y 910 -defaultsOSRD
+preplace port CC1 -pg 1 -lvl 4 -x 1310 -y 670 -defaultsOSRD
+preplace port CC2 -pg 1 -lvl 4 -x 1310 -y 700 -defaultsOSRD
+preplace port CC3 -pg 1 -lvl 4 -x 1310 -y 730 -defaultsOSRD
+preplace port CC4 -pg 1 -lvl 4 -x 1310 -y 760 -defaultsOSRD
+preplace port CC5 -pg 1 -lvl 4 -x 1310 -y 790 -defaultsOSRD
+preplace port CC6 -pg 1 -lvl 4 -x 1310 -y 820 -defaultsOSRD
+preplace port CC7 -pg 1 -lvl 4 -x 1310 -y 850 -defaultsOSRD
+preplace port CC8 -pg 1 -lvl 4 -x 1310 -y 880 -defaultsOSRD
+preplace port btn3_mode -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port BP0 -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port BP1 -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port SWA_1 -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port SWB_1 -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace port SWA_2 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port SWB_2 -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port LED_minuteur -pg 1 -lvl 4 -x 1310 -y 170 -defaultsOSRD
+preplace port LED_alarm -pg 1 -lvl 4 -x 1310 -y 940 -defaultsOSRD
+preplace port sw0_mode -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port sw1_reg -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
+preplace port sw0_mode_hrs -pg 1 -lvl 0 -x 0 -y 730 -defaultsOSRD
+preplace port LED_fnct_alarm -pg 1 -lvl 4 -x 1310 -y 1140 -defaultsOSRD
+preplace portBus gfedcba -pg 1 -lvl 4 -x 1310 -y 640 -defaultsOSRD
+preplace inst Raz -pg 1 -lvl 1 -x 180 -y 800 -defaultsOSRD -resize 83 88
+preplace inst Chronometre_0 -pg 1 -lvl 2 -x 630 -y 950 -defaultsOSRD
+preplace inst BaseDeTemps_0 -pg 1 -lvl 1 -x 180 -y 640 -defaultsOSRD
+preplace inst Aff_7seg_0 -pg 1 -lvl 3 -x 1120 -y 790 -defaultsOSRD
+preplace inst Gestion_Mode_0 -pg 1 -lvl 1 -x 180 -y 280 -defaultsOSRD
+preplace inst Minuteur_0 -pg 1 -lvl 2 -x 630 -y 140 -defaultsOSRD
+preplace inst Alarm_0 -pg 1 -lvl 2 -x 630 -y 390 -defaultsOSRD
+preplace inst Horloge_0 -pg 1 -lvl 2 -x 630 -y 730 -defaultsOSRD
+preplace netloc H_1 1 0 3 40 20 450 520 760
+preplace netloc BaseDeTemps_0_T1cs 1 1 1 460 80n
+preplace netloc BaseDeTemps_0_T1ms 1 1 2 470J 540 770
+preplace netloc sw1_reg_1 1 0 3 NJ 550 380 580 N
+preplace netloc Horloge_0_hrs 1 2 1 800 620n
+preplace netloc Horloge_0_min 1 2 1 820 640n
+preplace netloc Horloge_0_sec 1 2 1 840 660n
+preplace netloc Horloge_0_csc 1 2 1 860 680n
+preplace netloc Horloge_0_jrs 1 2 1 890 700n
+preplace netloc Horloge_0_moi 1 2 1 880 720n
+preplace netloc Horloge_0_ane 1 2 1 900 740n
+preplace netloc Horloge_0_cie 1 2 1 890 760n
+preplace netloc btn2_125k_1 1 0 1 30J 670n
+preplace netloc btn1_10k_1 1 0 1 NJ 650
+preplace netloc btn0_1k_1 1 0 1 40J 620n
+preplace netloc Aff_7seg_0_gfedcba 1 3 1 1260J 640n
+preplace netloc Aff_7seg_0_LED_mode_hrs 1 3 1 1270J 870n
+preplace netloc Aff_7seg_0_CC1 1 3 1 1270J 670n
+preplace netloc Aff_7seg_0_CC2 1 3 1 1280J 700n
+preplace netloc Aff_7seg_0_CC3 1 3 1 1290J 730n
+preplace netloc Aff_7seg_0_CC4 1 3 1 1270J 760n
+preplace netloc Aff_7seg_0_CC5 1 3 1 NJ 790
+preplace netloc Aff_7seg_0_CC6 1 3 1 1280J 810n
+preplace netloc Aff_7seg_0_CC7 1 3 1 1290J 830n
+preplace netloc Aff_7seg_0_CC8 1 3 1 1280J 850n
+preplace netloc btn3_mode_1 1 0 1 50J 190n
+preplace netloc BP0_1 1 0 1 20J 320n
+preplace netloc BP1_1 1 0 1 30J 340n
+preplace netloc Gestion_Mode_0_BP0_fnct 1 1 1 370 180n
+preplace netloc Gestion_Mode_0_BP1_Raz 1 1 1 350 200n
+preplace netloc Chronometre_0_csc 1 2 1 910 780n
+preplace netloc Chronometre_0_sec 1 2 1 920 800n
+preplace netloc Chronometre_0_min 1 2 1 780 820n
+preplace netloc Chronometre_0_hrs 1 2 1 800 840n
+preplace netloc Gestion_Mode_0_mode 1 1 2 440J 560 760
+preplace netloc Raz_dout 1 1 1 NJ 800
+preplace netloc SWA_1_1 1 0 1 20J 220n
+preplace netloc SWB_1_1 1 0 1 20J 250n
+preplace netloc SWA_2_1 1 0 1 NJ 280
+preplace netloc SWB_2_1 1 0 1 20J 300n
+preplace netloc Gestion_Mode_0_SWA_1_M 1 1 1 340 100n
+preplace netloc Gestion_Mode_0_SWB_1_M 1 1 1 360 120n
+preplace netloc Gestion_Mode_0_SWA_2_M 1 1 1 410 140n
+preplace netloc Gestion_Mode_0_SWB_2_M 1 1 1 420 160n
+preplace netloc Gestion_Mode_0_BP0_fnct_min 1 1 1 430 180n
+preplace netloc Gestion_Mode_0_BP1_Raz_min 1 1 1 440 200n
+preplace netloc Minuteur_0_LED_minuteur 1 2 2 NJ 170 NJ
+preplace netloc Minuteur_0_csc 1 2 1 970 90n
+preplace netloc Minuteur_0_sec 1 2 1 960 110n
+preplace netloc Minuteur_0_min 1 2 1 950 130n
+preplace netloc Minuteur_0_hrs 1 2 1 940 150n
+preplace netloc Gestion_Mode_0_SWA_1_A 1 1 1 N 340
+preplace netloc Gestion_Mode_0_SWB_1_A 1 1 1 N 360
+preplace netloc Gestion_Mode_0_SWA_2_A 1 1 1 N 380
+preplace netloc Gestion_Mode_0_SWB_2_A 1 1 1 N 400
+preplace netloc Gestion_Mode_0_BP0_fnct_ala 1 1 1 N 420
+preplace netloc Gestion_Mode_0_BP1_Raz_ala 1 1 1 N 440
+preplace netloc Alarm_0_csc 1 2 1 870 350n
+preplace netloc Alarm_0_sec 1 2 1 850 370n
+preplace netloc Alarm_0_min 1 2 1 830 390n
+preplace netloc Alarm_0_hrs 1 2 1 810 410n
+preplace netloc Alarm_0_fnct_alarm 1 2 2 790 1140 NJ
+preplace netloc Aff_7seg_0_LED_alarm 1 3 1 1260J 890n
+preplace netloc sw0_mode_hrs_1 1 0 3 NJ 730 310J 1040 770J
+preplace netloc Gestion_Mode_0_SWA_1_H 1 1 1 310 100n
+preplace netloc Gestion_Mode_0_SWB_1_H 1 1 1 320 120n
+preplace netloc Gestion_Mode_0_SWA_2_H 1 1 1 400 140n
+preplace netloc Gestion_Mode_0_SWB_2_H 1 1 1 390 160n
+preplace netloc BaseDeTemps_0_T_demi_s 1 1 2 490J 550 780
+preplace netloc sw0_mode_1 1 0 1 50J 360n
+preplace netloc Gestion_Mode_0_sw0_mode 1 1 2 330 570 780
+preplace netloc Gestion_Mode_0_cpt 1 1 2 480 1080 NJ
+preplace netloc Minuteur_0_reg_minuteur 1 2 1 930 190n
+levelinfo -pg 1 0 180 630 1120 1310
+pagesize -pg 1 -db -bbox -sgen -150 0 1460 1160
+"
+}
+0

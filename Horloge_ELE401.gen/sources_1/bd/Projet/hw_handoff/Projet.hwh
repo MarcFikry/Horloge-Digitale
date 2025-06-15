@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Apr  4 16:24:11 2025" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="Projet" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Chronometre_0" PORT="H"/>
+        <CONNECTION INSTANCE="BaseDeTemps_0" PORT="H"/>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="H"/>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="H"/>
+        <CONNECTION INSTANCE="Minuteur_0" PORT="H"/>
+        <CONNECTION INSTANCE="Alarm_0" PORT="H"/>
+        <CONNECTION INSTANCE="Horloge_0" PORT="H"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn0_1k" SIGIS="undef" SIGNAME="External_Ports_btn0_1k">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BaseDeTemps_0" PORT="btn0_1k"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn1_10k" SIGIS="undef" SIGNAME="External_Ports_btn1_10k">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BaseDeTemps_0" PORT="btn1_10k"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn2_125k" SIGIS="undef" SIGNAME="External_Ports_btn2_125k">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BaseDeTemps_0" PORT="btn2_125k"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="6" NAME="gfedcba" RIGHT="0" SIGIS="undef" SIGNAME="Aff_7seg_0_gfedcba">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="gfedcba"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LED_mode_hrs" SIGIS="undef" SIGNAME="Aff_7seg_0_LED_mode_hrs">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="LED_mode_hrs"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC1" SIGIS="undef" SIGNAME="Aff_7seg_0_CC1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC2" SIGIS="undef" SIGNAME="Aff_7seg_0_CC2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC3" SIGIS="undef" SIGNAME="Aff_7seg_0_CC3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC4" SIGIS="undef" SIGNAME="Aff_7seg_0_CC4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC5" SIGIS="undef" SIGNAME="Aff_7seg_0_CC5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC6" SIGIS="undef" SIGNAME="Aff_7seg_0_CC6">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC6"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC7" SIGIS="undef" SIGNAME="Aff_7seg_0_CC7">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC7"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC8" SIGIS="undef" SIGNAME="Aff_7seg_0_CC8">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="CC8"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn3_mode" SIGIS="undef" SIGNAME="External_Ports_btn3_mode">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="btn3_mode"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BP0" SIGIS="undef" SIGNAME="External_Ports_BP0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BP1" SIGIS="undef" SIGNAME="External_Ports_BP1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SWA_1" SIGIS="undef" SIGNAME="External_Ports_SWA_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SWB_1" SIGIS="undef" SIGNAME="External_Ports_SWB_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SWA_2" SIGIS="undef" SIGNAME="External_Ports_SWA_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SWB_2" SIGIS="undef" SIGNAME="External_Ports_SWB_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LED_minuteur" SIGIS="undef" SIGNAME="Minuteur_0_LED_minuteur">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Minuteur_0" PORT="LED_minuteur"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LED_alarm" SIGIS="undef" SIGNAME="Aff_7seg_0_LED_alarm">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="LED_alarm"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sw0_mode" SIGIS="undef" SIGNAME="External_Ports_sw0_mode">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gestion_Mode_0" PORT="sw0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sw1_reg" SIGIS="undef" SIGNAME="External_Ports_sw1_reg">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="sw1_reg"/>
+        <CONNECTION INSTANCE="Horloge_0" PORT="sw1_reg"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sw0_mode_hrs" SIGIS="undef" SIGNAME="External_Ports_sw0_mode_hrs">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Aff_7seg_0" PORT="sw0_mode_hrs"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LED_fnct_alarm" SIGIS="undef" SIGNAME="Alarm_0_fnct_alarm">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Alarm_0" PORT="fnct_alarm"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Aff_7seg_0" HWVERSION="1.0" INSTANCE="Aff_7seg_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Aff_7seg" VLNV="xilinx.com:module_ref:Aff_7seg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_Aff_7seg_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T1ms" SIGIS="undef" SIGNAME="BaseDeTemps_0_T1ms">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BaseDeTemps_0" PORT="T1ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_demi_s" SIGIS="undef" SIGNAME="BaseDeTemps_0_T_demi_s">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BaseDeTemps_0" PORT="T_demi_s"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw0_mode" SIGIS="undef" SIGNAME="Gestion_Mode_0_sw0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="sw0_mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw1_reg" SIGIS="undef" SIGNAME="External_Ports_sw1_reg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw1_reg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw0_mode_hrs" SIGIS="undef" SIGNAME="External_Ports_sw0_mode_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw0_mode_hrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="hrs_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="hrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="min_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="sec_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="sec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="csc_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="csc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="jrs_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_jrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="jrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="moi_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_moi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="moi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="ane_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_ane">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="ane"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="cie_hor" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_cie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="cie"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="csc_chr" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Chronometre_0" PORT="csc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="sec_chr" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Chronometre_0" PORT="sec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="min_chr" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Chronometre_0" PORT="min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="hrs_chr" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Chronometre_0" PORT="hrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="csc_min" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="csc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="sec_min" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="sec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="min_min" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="hrs_min" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="hrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reg_minuteur" SIGIS="undef" SIGNAME="Minuteur_0_reg_minuteur">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="reg_minuteur"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="csc_ala" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="csc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="sec_ala" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="sec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="min_ala" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="hrs_ala" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="hrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fnct_alarm" SIGIS="undef" SIGNAME="Alarm_0_fnct_alarm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="fnct_alarm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="mode" RIGHT="0" SIGIS="undef" SIGNAME="Gestion_Mode_0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="cpt" RIGHT="0" SIGIS="undef" SIGNAME="Gestion_Mode_0_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="cpt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="gfedcba" RIGHT="0" SIGIS="undef" SIGNAME="Aff_7seg_0_gfedcba">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="gfedcba"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC1" SIGIS="undef" SIGNAME="Aff_7seg_0_CC1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC2" SIGIS="undef" SIGNAME="Aff_7seg_0_CC2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC3" SIGIS="undef" SIGNAME="Aff_7seg_0_CC3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC4" SIGIS="undef" SIGNAME="Aff_7seg_0_CC4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC5" SIGIS="undef" SIGNAME="Aff_7seg_0_CC5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC6" SIGIS="undef" SIGNAME="Aff_7seg_0_CC6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC7" SIGIS="undef" SIGNAME="Aff_7seg_0_CC7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC8" SIGIS="undef" SIGNAME="Aff_7seg_0_CC8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LED_mode_hrs" SIGIS="undef" SIGNAME="Aff_7seg_0_LED_mode_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_mode_hrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LED_alarm" SIGIS="undef" SIGNAME="Aff_7seg_0_LED_alarm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_alarm"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Alarm_0" HWVERSION="1.0" INSTANCE="Alarm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Alarm" VLNV="xilinx.com:module_ref:Alarm:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_Alarm_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_1" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_1_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_1_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_1" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_1_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_1_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_2" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_2_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_2_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_2" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_2_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_2_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP0_fnct" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP0_fnct_ala">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP0_fnct_ala"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP1_Raz" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP1_Raz_ala">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP1_Raz_ala"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="cpt" RIGHT="0" SIGIS="undef" SIGNAME="Gestion_Mode_0_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="cpt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="csc" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="csc_ala"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="sec" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="sec_ala"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="min" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="min_ala"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="hrs" RIGHT="0" SIGIS="undef" SIGNAME="Alarm_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="hrs_ala"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fnct_alarm" SIGIS="undef" SIGNAME="Alarm_0_fnct_alarm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_fnct_alarm"/>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="fnct_alarm"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/BaseDeTemps_0" HWVERSION="1.0" INSTANCE="BaseDeTemps_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BaseDeTemps" VLNV="xilinx.com:module_ref:BaseDeTemps:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_BaseDeTemps_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn0_1k" SIGIS="undef" SIGNAME="External_Ports_btn0_1k">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn0_1k"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn1_10k" SIGIS="undef" SIGNAME="External_Ports_btn1_10k">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn1_10k"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn2_125k" SIGIS="undef" SIGNAME="External_Ports_btn2_125k">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn2_125k"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="T1cs" SIGIS="undef" SIGNAME="BaseDeTemps_0_T1cs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Chronometre_0" PORT="T1cs"/>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="T1cs"/>
+            <CONNECTION INSTANCE="Horloge_0" PORT="T1cs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="T1ms" SIGIS="undef" SIGNAME="BaseDeTemps_0_T1ms">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="T1ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="T_demi_s" SIGIS="undef" SIGNAME="BaseDeTemps_0_T_demi_s">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="T_demi_s"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LED" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Chronometre_0" HWVERSION="1.0" INSTANCE="Chronometre_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Chronometre" VLNV="xilinx.com:module_ref:Chronometre:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_Chronometre_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T1cs" SIGIS="undef" SIGNAME="BaseDeTemps_0_T1cs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BaseDeTemps_0" PORT="T1cs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP0_fnct" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP0_fnct_chr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP0_fnct_chr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP1_Raz" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP1_Raz_chr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP1_Raz_chr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="csc" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="csc_chr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="sec" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="sec_chr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="min" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="min_chr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="hrs" RIGHT="0" SIGIS="undef" SIGNAME="Chronometre_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="hrs_chr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Gestion_Mode_0" HWVERSION="1.0" INSTANCE="Gestion_Mode_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gestion_Mode" VLNV="xilinx.com:module_ref:Gestion_Mode:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_Gestion_Mode_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn3_mode" SIGIS="undef" SIGNAME="External_Ports_btn3_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn3_mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_1" SIGIS="undef" SIGNAME="External_Ports_SWA_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SWA_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_1" SIGIS="undef" SIGNAME="External_Ports_SWB_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SWB_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_2" SIGIS="undef" SIGNAME="External_Ports_SWA_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SWA_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_2" SIGIS="undef" SIGNAME="External_Ports_SWB_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SWB_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP0" SIGIS="undef" SIGNAME="External_Ports_BP0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BP0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP1" SIGIS="undef" SIGNAME="External_Ports_BP1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BP1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw0" SIGIS="undef" SIGNAME="External_Ports_sw0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw0_mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sw0_mode" SIGIS="undef" SIGNAME="Gestion_Mode_0_sw0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="sw0_mode"/>
+            <CONNECTION INSTANCE="Horloge_0" PORT="sw0_mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWA_1_H" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_1_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="SWA_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWB_1_H" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_1_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="SWB_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWA_2_H" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_2_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="SWA_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWB_2_H" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_2_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="SWB_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BP0_fnct_chr" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP0_fnct_chr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Chronometre_0" PORT="BP0_fnct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BP1_Raz_chr" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP1_Raz_chr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Chronometre_0" PORT="BP1_Raz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWA_1_M" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_1_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="SWA_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWB_1_M" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_1_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="SWB_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWA_2_M" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_2_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="SWA_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWB_2_M" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_2_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="SWB_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BP0_fnct_min" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP0_fnct_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="BP0_fnct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BP1_Raz_min" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP1_Raz_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="BP1_Raz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWA_1_A" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_1_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="SWA_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWB_1_A" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_1_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="SWB_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWA_2_A" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_2_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="SWA_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWB_2_A" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_2_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="SWB_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BP0_fnct_ala" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP0_fnct_ala">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="BP0_fnct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BP1_Raz_ala" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP1_Raz_ala">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Alarm_0" PORT="BP1_Raz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="mode" RIGHT="0" SIGIS="undef" SIGNAME="Gestion_Mode_0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="cpt" RIGHT="0" SIGIS="undef" SIGNAME="Gestion_Mode_0_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="cpt"/>
+            <CONNECTION INSTANCE="Minuteur_0" PORT="cpt"/>
+            <CONNECTION INSTANCE="Alarm_0" PORT="cpt"/>
+            <CONNECTION INSTANCE="Horloge_0" PORT="cpt"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Horloge_0" HWVERSION="1.0" INSTANCE="Horloge_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Horloge" VLNV="xilinx.com:module_ref:Horloge:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_Horloge_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T1cs" SIGIS="undef" SIGNAME="BaseDeTemps_0_T1cs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BaseDeTemps_0" PORT="T1cs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw0_mode" SIGIS="undef" SIGNAME="Gestion_Mode_0_sw0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="sw0_mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw1_reg" SIGIS="undef" SIGNAME="External_Ports_sw1_reg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw1_reg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_1" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_1_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_1_H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_1" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_1_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_1_H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_2" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_2_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_2_H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_2" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_2_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_2_H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Raz" SIGIS="undef" SIGNAME="Raz_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Raz" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="cpt" RIGHT="0" SIGIS="undef" SIGNAME="Gestion_Mode_0_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="cpt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="hrs" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="hrs_hor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="min" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="min_hor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="sec" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="sec_hor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="csc" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="csc_hor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="jrs" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_jrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="jrs_hor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="moi" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_moi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="moi_hor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="ane" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_ane">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="ane_hor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="cie" RIGHT="0" SIGIS="undef" SIGNAME="Horloge_0_cie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="cie_hor"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Minuteur_0" HWVERSION="1.0" INSTANCE="Minuteur_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Minuteur" VLNV="xilinx.com:module_ref:Minuteur:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_Minuteur_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="H" SIGIS="undef" SIGNAME="External_Ports_H">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="H"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T1cs" SIGIS="undef" SIGNAME="BaseDeTemps_0_T1cs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BaseDeTemps_0" PORT="T1cs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_1" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_1_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_1_M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_1" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_1_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_1_M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWA_2" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWA_2_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWA_2_M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWB_2" SIGIS="undef" SIGNAME="Gestion_Mode_0_SWB_2_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="SWB_2_M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP0_fnct" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP0_fnct_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP0_fnct_min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BP1_Raz" SIGIS="undef" SIGNAME="Gestion_Mode_0_BP1_Raz_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="BP1_Raz_min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="cpt" RIGHT="0" SIGIS="undef" SIGNAME="Gestion_Mode_0_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gestion_Mode_0" PORT="cpt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="csc" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_csc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="csc_min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="sec" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_sec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="sec_min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="min" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_min">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="min_min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="hrs" RIGHT="0" SIGIS="undef" SIGNAME="Minuteur_0_hrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="hrs_min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LED_minuteur" SIGIS="undef" SIGNAME="Minuteur_0_LED_minuteur">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_minuteur"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="reg_minuteur" SIGIS="undef" SIGNAME="Minuteur_0_reg_minuteur">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Aff_7seg_0" PORT="reg_minuteur"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/Raz" HWVERSION="1.1" INSTANCE="Raz" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="Projet_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="Raz_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Horloge_0" PORT="Raz"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr  2 20:13:34 2025
+# Process ID: 6028
+# Current directory: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8900 M:\UNI\L2\L2 S4\ELE401\Horloge_ELE401\Horloge_ELE401.xpr
+# Log file: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/vivado.log
+# Journal file: M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 999.016 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_module_reference Projet_Gestion_Mode_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Reading block design file <M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/Projet.bd>...
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - Raz
+Adding component instance block -- xilinx.com:module_ref:Chronometre:1.0 - Chronometre_0
+Adding component instance block -- xilinx.com:module_ref:BaseDeTemps:1.0 - BaseDeTemps_0
+Adding component instance block -- xilinx.com:module_ref:Minuteur:1.0 - Minuteur_0
+Adding component instance block -- xilinx.com:module_ref:Aff_7seg:1.0 - Aff_7seg_0
+Adding component instance block -- xilinx.com:module_ref:Horloge:1.0 - Horloge_0
+Adding component instance block -- xilinx.com:module_ref:Gestion_Mode:1.0 - Gestion_Mode_0
+Adding component instance block -- xilinx.com:module_ref:Alarm:1.0 - Alarm_0
+Successfully read diagram <Projet> from block design file <M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/Projet.bd>
+Upgrading 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/Projet.bd'
+INFO: [IP_Flow 19-1972] Upgraded Projet_Gestion_Mode_0_0 from Gestion_Mode_v1_0 1.0 to Gestion_Mode_v1_0 1.0
+Wrote  : <M:\UNI\L2\L2 S4\ELE401\Horloge_ELE401\Horloge_ELE401.srcs\sources_1\bd\Projet\Projet.bd> 
+Wrote  : <M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/ui/bd_a641af6c.ui> 
+upgrade_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 999.016 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 999.016 ; gain = 0.000
+regenerate_bd_layout
+update_module_reference Projet_Minuteur_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/Projet.bd'
+INFO: [IP_Flow 19-1972] Upgraded Projet_Minuteur_0_0 from Minuteur_v1_0 1.0 to Minuteur_v1_0 1.0
+Wrote  : <M:\UNI\L2\L2 S4\ELE401\Horloge_ELE401\Horloge_ELE401.srcs\sources_1\bd\Projet\Projet.bd> 
+Wrote  : <M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/ui/bd_a641af6c.ui> 
+update_module_reference Projet_Alarm_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/Projet.bd'
+INFO: [IP_Flow 19-1972] Upgraded Projet_Alarm_0_0 from Alarm_v1_0 1.0 to Alarm_v1_0 1.0
+Wrote  : <M:\UNI\L2\L2 S4\ELE401\Horloge_ELE401\Horloge_ELE401.srcs\sources_1\bd\Projet\Projet.bd> 
+Wrote  : <M:/UNI/L2/L2 S4/ELE401/Horloge_ELE401/Horloge_ELE401.srcs/sources_1/bd/Projet/ui/bd_a641af6c.ui> 
+regenerate_bd_layout
+create_bd_cell -type module -reference Horloge Horloge_1
+delete_bd_objs [get_bd_cells Horloge_1]
+create_bd_cell -type module -reference Minuteur Minuteur_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 14:25:54 2025...

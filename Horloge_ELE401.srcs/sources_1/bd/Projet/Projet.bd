@@ -1,0 +1,1162 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x14A590C614A590C6",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Horloge_ELE401.gen/sources_1/bd/Projet",
+      "name": "Projet",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Raz": "",
+      "Chronometre_0": "",
+      "BaseDeTemps_0": "",
+      "Aff_7seg_0": "",
+      "Gestion_Mode_0": "",
+      "Minuteur_0": "",
+      "Alarm_0": "",
+      "Horloge_0": ""
+    },
+    "ports": {
+      "H": {
+        "direction": "I"
+      },
+      "btn0_1k": {
+        "direction": "I"
+      },
+      "btn1_10k": {
+        "direction": "I"
+      },
+      "btn2_125k": {
+        "direction": "I"
+      },
+      "gfedcba": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "LED_mode_hrs": {
+        "direction": "O"
+      },
+      "CC1": {
+        "direction": "O"
+      },
+      "CC2": {
+        "direction": "O"
+      },
+      "CC3": {
+        "direction": "O"
+      },
+      "CC4": {
+        "direction": "O"
+      },
+      "CC5": {
+        "direction": "O"
+      },
+      "CC6": {
+        "direction": "O"
+      },
+      "CC7": {
+        "direction": "O"
+      },
+      "CC8": {
+        "direction": "O"
+      },
+      "btn3_mode": {
+        "direction": "I"
+      },
+      "BP0": {
+        "direction": "I"
+      },
+      "BP1": {
+        "direction": "I"
+      },
+      "SWA_1": {
+        "direction": "I"
+      },
+      "SWB_1": {
+        "direction": "I"
+      },
+      "SWA_2": {
+        "direction": "I"
+      },
+      "SWB_2": {
+        "direction": "I"
+      },
+      "LED_minuteur": {
+        "direction": "O"
+      },
+      "LED_alarm": {
+        "direction": "O"
+      },
+      "sw0_mode": {
+        "direction": "I"
+      },
+      "sw1_reg": {
+        "direction": "I"
+      },
+      "sw0_mode_hrs": {
+        "direction": "I"
+      },
+      "LED_fnct_alarm": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Raz": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "Projet_xlconstant_0_0",
+        "xci_path": "ip\\Projet_xlconstant_0_0\\Projet_xlconstant_0_0.xci",
+        "inst_hier_path": "Raz",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "Chronometre_0": {
+        "vlnv": "xilinx.com:module_ref:Chronometre:1.0",
+        "xci_name": "Projet_Chronometre_0_0",
+        "xci_path": "ip\\Projet_Chronometre_0_0\\Projet_Chronometre_0_0.xci",
+        "inst_hier_path": "Chronometre_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Chronometre",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "H": {
+            "direction": "I"
+          },
+          "T1cs": {
+            "direction": "I"
+          },
+          "BP0_fnct": {
+            "direction": "I"
+          },
+          "BP1_Raz": {
+            "direction": "I"
+          },
+          "csc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "sec": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "min": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "hrs": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "BaseDeTemps_0": {
+        "vlnv": "xilinx.com:module_ref:BaseDeTemps:1.0",
+        "xci_name": "Projet_BaseDeTemps_0_0",
+        "xci_path": "ip\\Projet_BaseDeTemps_0_0\\Projet_BaseDeTemps_0_0.xci",
+        "inst_hier_path": "BaseDeTemps_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BaseDeTemps",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "H": {
+            "direction": "I"
+          },
+          "btn0_1k": {
+            "direction": "I"
+          },
+          "btn1_10k": {
+            "direction": "I"
+          },
+          "btn2_125k": {
+            "direction": "I"
+          },
+          "T1cs": {
+            "direction": "O"
+          },
+          "T1ms": {
+            "direction": "O"
+          },
+          "T_demi_s": {
+            "direction": "O"
+          },
+          "LED": {
+            "direction": "O"
+          }
+        }
+      },
+      "Aff_7seg_0": {
+        "vlnv": "xilinx.com:module_ref:Aff_7seg:1.0",
+        "xci_name": "Projet_Aff_7seg_0_0",
+        "xci_path": "ip\\Projet_Aff_7seg_0_0\\Projet_Aff_7seg_0_0.xci",
+        "inst_hier_path": "Aff_7seg_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Aff_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "H": {
+            "direction": "I"
+          },
+          "T1ms": {
+            "direction": "I"
+          },
+          "T_demi_s": {
+            "direction": "I"
+          },
+          "sw0_mode": {
+            "direction": "I"
+          },
+          "sw1_reg": {
+            "direction": "I"
+          },
+          "sw0_mode_hrs": {
+            "direction": "I"
+          },
+          "hrs_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "min_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "sec_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "csc_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "jrs_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "moi_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "ane_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cie_hor": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "csc_chr": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "sec_chr": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "min_chr": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "hrs_chr": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "csc_min": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "sec_min": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "min_min": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "hrs_min": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "reg_minuteur": {
+            "direction": "I"
+          },
+          "csc_ala": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "sec_ala": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "min_ala": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "hrs_ala": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "fnct_alarm": {
+            "direction": "I"
+          },
+          "mode": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "cpt": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "gfedcba": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "CC1": {
+            "direction": "O"
+          },
+          "CC2": {
+            "direction": "O"
+          },
+          "CC3": {
+            "direction": "O"
+          },
+          "CC4": {
+            "direction": "O"
+          },
+          "CC5": {
+            "direction": "O"
+          },
+          "CC6": {
+            "direction": "O"
+          },
+          "CC7": {
+            "direction": "O"
+          },
+          "CC8": {
+            "direction": "O"
+          },
+          "LED_mode_hrs": {
+            "direction": "O"
+          },
+          "LED_alarm": {
+            "direction": "O"
+          }
+        }
+      },
+      "Gestion_Mode_0": {
+        "vlnv": "xilinx.com:module_ref:Gestion_Mode:1.0",
+        "xci_name": "Projet_Gestion_Mode_0_0",
+        "xci_path": "ip\\Projet_Gestion_Mode_0_0\\Projet_Gestion_Mode_0_0.xci",
+        "inst_hier_path": "Gestion_Mode_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Gestion_Mode",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "H": {
+            "direction": "I"
+          },
+          "btn3_mode": {
+            "direction": "I"
+          },
+          "SWA_1": {
+            "direction": "I"
+          },
+          "SWB_1": {
+            "direction": "I"
+          },
+          "SWA_2": {
+            "direction": "I"
+          },
+          "SWB_2": {
+            "direction": "I"
+          },
+          "BP0": {
+            "direction": "I"
+          },
+          "BP1": {
+            "direction": "I"
+          },
+          "sw0": {
+            "direction": "I"
+          },
+          "sw0_mode": {
+            "direction": "O"
+          },
+          "SWA_1_H": {
+            "direction": "O"
+          },
+          "SWB_1_H": {
+            "direction": "O"
+          },
+          "SWA_2_H": {
+            "direction": "O"
+          },
+          "SWB_2_H": {
+            "direction": "O"
+          },
+          "BP0_fnct_chr": {
+            "direction": "O"
+          },
+          "BP1_Raz_chr": {
+            "direction": "O"
+          },
+          "SWA_1_M": {
+            "direction": "O"
+          },
+          "SWB_1_M": {
+            "direction": "O"
+          },
+          "SWA_2_M": {
+            "direction": "O"
+          },
+          "SWB_2_M": {
+            "direction": "O"
+          },
+          "BP0_fnct_min": {
+            "direction": "O"
+          },
+          "BP1_Raz_min": {
+            "direction": "O"
+          },
+          "SWA_1_A": {
+            "direction": "O"
+          },
+          "SWB_1_A": {
+            "direction": "O"
+          },
+          "SWA_2_A": {
+            "direction": "O"
+          },
+          "SWB_2_A": {
+            "direction": "O"
+          },
+          "BP0_fnct_ala": {
+            "direction": "O"
+          },
+          "BP1_Raz_ala": {
+            "direction": "O"
+          },
+          "mode": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "cpt": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "Minuteur_0": {
+        "vlnv": "xilinx.com:module_ref:Minuteur:1.0",
+        "xci_name": "Projet_Minuteur_0_0",
+        "xci_path": "ip\\Projet_Minuteur_0_0\\Projet_Minuteur_0_0.xci",
+        "inst_hier_path": "Minuteur_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Minuteur",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "H": {
+            "direction": "I"
+          },
+          "T1cs": {
+            "direction": "I"
+          },
+          "SWA_1": {
+            "direction": "I"
+          },
+          "SWB_1": {
+            "direction": "I"
+          },
+          "SWA_2": {
+            "direction": "I"
+          },
+          "SWB_2": {
+            "direction": "I"
+          },
+          "BP0_fnct": {
+            "direction": "I"
+          },
+          "BP1_Raz": {
+            "direction": "I"
+          },
+          "cpt": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "csc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "sec": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "min": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "hrs": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "LED_minuteur": {
+            "direction": "O"
+          },
+          "reg_minuteur": {
+            "direction": "O"
+          }
+        }
+      },
+      "Alarm_0": {
+        "vlnv": "xilinx.com:module_ref:Alarm:1.0",
+        "xci_name": "Projet_Alarm_0_0",
+        "xci_path": "ip\\Projet_Alarm_0_0\\Projet_Alarm_0_0.xci",
+        "inst_hier_path": "Alarm_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Alarm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "H": {
+            "direction": "I"
+          },
+          "SWA_1": {
+            "direction": "I"
+          },
+          "SWB_1": {
+            "direction": "I"
+          },
+          "SWA_2": {
+            "direction": "I"
+          },
+          "SWB_2": {
+            "direction": "I"
+          },
+          "BP0_fnct": {
+            "direction": "I"
+          },
+          "BP1_Raz": {
+            "direction": "I"
+          },
+          "cpt": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "csc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "sec": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "min": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "hrs": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "fnct_alarm": {
+            "direction": "O"
+          }
+        }
+      },
+      "Horloge_0": {
+        "vlnv": "xilinx.com:module_ref:Horloge:1.0",
+        "xci_name": "Projet_Horloge_0_0",
+        "xci_path": "ip\\Projet_Horloge_0_0\\Projet_Horloge_0_0.xci",
+        "inst_hier_path": "Horloge_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Horloge",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "H": {
+            "direction": "I"
+          },
+          "T1cs": {
+            "direction": "I"
+          },
+          "sw0_mode": {
+            "direction": "I"
+          },
+          "sw1_reg": {
+            "direction": "I"
+          },
+          "SWA_1": {
+            "direction": "I"
+          },
+          "SWB_1": {
+            "direction": "I"
+          },
+          "SWA_2": {
+            "direction": "I"
+          },
+          "SWB_2": {
+            "direction": "I"
+          },
+          "Raz": {
+            "direction": "I"
+          },
+          "cpt": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "hrs": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "min": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "sec": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "csc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "jrs": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "moi": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ane": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "cie": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "H_1": {
+        "ports": [
+          "H",
+          "Chronometre_0/H",
+          "BaseDeTemps_0/H",
+          "Aff_7seg_0/H",
+          "Gestion_Mode_0/H",
+          "Minuteur_0/H",
+          "Alarm_0/H",
+          "Horloge_0/H"
+        ]
+      },
+      "BaseDeTemps_0_T1cs": {
+        "ports": [
+          "BaseDeTemps_0/T1cs",
+          "Chronometre_0/T1cs",
+          "Minuteur_0/T1cs",
+          "Horloge_0/T1cs"
+        ]
+      },
+      "BaseDeTemps_0_T1ms": {
+        "ports": [
+          "BaseDeTemps_0/T1ms",
+          "Aff_7seg_0/T1ms"
+        ]
+      },
+      "sw1_reg_1": {
+        "ports": [
+          "sw1_reg",
+          "Aff_7seg_0/sw1_reg",
+          "Horloge_0/sw1_reg"
+        ]
+      },
+      "Horloge_0_hrs": {
+        "ports": [
+          "Horloge_0/hrs",
+          "Aff_7seg_0/hrs_hor"
+        ]
+      },
+      "Horloge_0_min": {
+        "ports": [
+          "Horloge_0/min",
+          "Aff_7seg_0/min_hor"
+        ]
+      },
+      "Horloge_0_sec": {
+        "ports": [
+          "Horloge_0/sec",
+          "Aff_7seg_0/sec_hor"
+        ]
+      },
+      "Horloge_0_csc": {
+        "ports": [
+          "Horloge_0/csc",
+          "Aff_7seg_0/csc_hor"
+        ]
+      },
+      "Horloge_0_jrs": {
+        "ports": [
+          "Horloge_0/jrs",
+          "Aff_7seg_0/jrs_hor"
+        ]
+      },
+      "Horloge_0_moi": {
+        "ports": [
+          "Horloge_0/moi",
+          "Aff_7seg_0/moi_hor"
+        ]
+      },
+      "Horloge_0_ane": {
+        "ports": [
+          "Horloge_0/ane",
+          "Aff_7seg_0/ane_hor"
+        ]
+      },
+      "Horloge_0_cie": {
+        "ports": [
+          "Horloge_0/cie",
+          "Aff_7seg_0/cie_hor"
+        ]
+      },
+      "btn2_125k_1": {
+        "ports": [
+          "btn2_125k",
+          "BaseDeTemps_0/btn2_125k"
+        ]
+      },
+      "btn1_10k_1": {
+        "ports": [
+          "btn1_10k",
+          "BaseDeTemps_0/btn1_10k"
+        ]
+      },
+      "btn0_1k_1": {
+        "ports": [
+          "btn0_1k",
+          "BaseDeTemps_0/btn0_1k"
+        ]
+      },
+      "Aff_7seg_0_gfedcba": {
+        "ports": [
+          "Aff_7seg_0/gfedcba",
+          "gfedcba"
+        ]
+      },
+      "Aff_7seg_0_LED_mode_hrs": {
+        "ports": [
+          "Aff_7seg_0/LED_mode_hrs",
+          "LED_mode_hrs"
+        ]
+      },
+      "Aff_7seg_0_CC1": {
+        "ports": [
+          "Aff_7seg_0/CC1",
+          "CC1"
+        ]
+      },
+      "Aff_7seg_0_CC2": {
+        "ports": [
+          "Aff_7seg_0/CC2",
+          "CC2"
+        ]
+      },
+      "Aff_7seg_0_CC3": {
+        "ports": [
+          "Aff_7seg_0/CC3",
+          "CC3"
+        ]
+      },
+      "Aff_7seg_0_CC4": {
+        "ports": [
+          "Aff_7seg_0/CC4",
+          "CC4"
+        ]
+      },
+      "Aff_7seg_0_CC5": {
+        "ports": [
+          "Aff_7seg_0/CC5",
+          "CC5"
+        ]
+      },
+      "Aff_7seg_0_CC6": {
+        "ports": [
+          "Aff_7seg_0/CC6",
+          "CC6"
+        ]
+      },
+      "Aff_7seg_0_CC7": {
+        "ports": [
+          "Aff_7seg_0/CC7",
+          "CC7"
+        ]
+      },
+      "Aff_7seg_0_CC8": {
+        "ports": [
+          "Aff_7seg_0/CC8",
+          "CC8"
+        ]
+      },
+      "btn3_mode_1": {
+        "ports": [
+          "btn3_mode",
+          "Gestion_Mode_0/btn3_mode"
+        ]
+      },
+      "BP0_1": {
+        "ports": [
+          "BP0",
+          "Gestion_Mode_0/BP0"
+        ]
+      },
+      "BP1_1": {
+        "ports": [
+          "BP1",
+          "Gestion_Mode_0/BP1"
+        ]
+      },
+      "Gestion_Mode_0_BP0_fnct": {
+        "ports": [
+          "Gestion_Mode_0/BP0_fnct_chr",
+          "Chronometre_0/BP0_fnct"
+        ]
+      },
+      "Gestion_Mode_0_BP1_Raz": {
+        "ports": [
+          "Gestion_Mode_0/BP1_Raz_chr",
+          "Chronometre_0/BP1_Raz"
+        ]
+      },
+      "Chronometre_0_csc": {
+        "ports": [
+          "Chronometre_0/csc",
+          "Aff_7seg_0/csc_chr"
+        ]
+      },
+      "Chronometre_0_sec": {
+        "ports": [
+          "Chronometre_0/sec",
+          "Aff_7seg_0/sec_chr"
+        ]
+      },
+      "Chronometre_0_min": {
+        "ports": [
+          "Chronometre_0/min",
+          "Aff_7seg_0/min_chr"
+        ]
+      },
+      "Chronometre_0_hrs": {
+        "ports": [
+          "Chronometre_0/hrs",
+          "Aff_7seg_0/hrs_chr"
+        ]
+      },
+      "Gestion_Mode_0_mode": {
+        "ports": [
+          "Gestion_Mode_0/mode",
+          "Aff_7seg_0/mode"
+        ]
+      },
+      "Raz_dout": {
+        "ports": [
+          "Raz/dout",
+          "Horloge_0/Raz"
+        ]
+      },
+      "SWA_1_1": {
+        "ports": [
+          "SWA_1",
+          "Gestion_Mode_0/SWA_1"
+        ]
+      },
+      "SWB_1_1": {
+        "ports": [
+          "SWB_1",
+          "Gestion_Mode_0/SWB_1"
+        ]
+      },
+      "SWA_2_1": {
+        "ports": [
+          "SWA_2",
+          "Gestion_Mode_0/SWA_2"
+        ]
+      },
+      "SWB_2_1": {
+        "ports": [
+          "SWB_2",
+          "Gestion_Mode_0/SWB_2"
+        ]
+      },
+      "Gestion_Mode_0_SWA_1_M": {
+        "ports": [
+          "Gestion_Mode_0/SWA_1_M",
+          "Minuteur_0/SWA_1"
+        ]
+      },
+      "Gestion_Mode_0_SWB_1_M": {
+        "ports": [
+          "Gestion_Mode_0/SWB_1_M",
+          "Minuteur_0/SWB_1"
+        ]
+      },
+      "Gestion_Mode_0_SWA_2_M": {
+        "ports": [
+          "Gestion_Mode_0/SWA_2_M",
+          "Minuteur_0/SWA_2"
+        ]
+      },
+      "Gestion_Mode_0_SWB_2_M": {
+        "ports": [
+          "Gestion_Mode_0/SWB_2_M",
+          "Minuteur_0/SWB_2"
+        ]
+      },
+      "Gestion_Mode_0_BP0_fnct_min": {
+        "ports": [
+          "Gestion_Mode_0/BP0_fnct_min",
+          "Minuteur_0/BP0_fnct"
+        ]
+      },
+      "Gestion_Mode_0_BP1_Raz_min": {
+        "ports": [
+          "Gestion_Mode_0/BP1_Raz_min",
+          "Minuteur_0/BP1_Raz"
+        ]
+      },
+      "Minuteur_0_LED_minuteur": {
+        "ports": [
+          "Minuteur_0/LED_minuteur",
+          "LED_minuteur"
+        ]
+      },
+      "Minuteur_0_csc": {
+        "ports": [
+          "Minuteur_0/csc",
+          "Aff_7seg_0/csc_min"
+        ]
+      },
+      "Minuteur_0_sec": {
+        "ports": [
+          "Minuteur_0/sec",
+          "Aff_7seg_0/sec_min"
+        ]
+      },
+      "Minuteur_0_min": {
+        "ports": [
+          "Minuteur_0/min",
+          "Aff_7seg_0/min_min"
+        ]
+      },
+      "Minuteur_0_hrs": {
+        "ports": [
+          "Minuteur_0/hrs",
+          "Aff_7seg_0/hrs_min"
+        ]
+      },
+      "Gestion_Mode_0_SWA_1_A": {
+        "ports": [
+          "Gestion_Mode_0/SWA_1_A",
+          "Alarm_0/SWA_1"
+        ]
+      },
+      "Gestion_Mode_0_SWB_1_A": {
+        "ports": [
+          "Gestion_Mode_0/SWB_1_A",
+          "Alarm_0/SWB_1"
+        ]
+      },
+      "Gestion_Mode_0_SWA_2_A": {
+        "ports": [
+          "Gestion_Mode_0/SWA_2_A",
+          "Alarm_0/SWA_2"
+        ]
+      },
+      "Gestion_Mode_0_SWB_2_A": {
+        "ports": [
+          "Gestion_Mode_0/SWB_2_A",
+          "Alarm_0/SWB_2"
+        ]
+      },
+      "Gestion_Mode_0_BP0_fnct_ala": {
+        "ports": [
+          "Gestion_Mode_0/BP0_fnct_ala",
+          "Alarm_0/BP0_fnct"
+        ]
+      },
+      "Gestion_Mode_0_BP1_Raz_ala": {
+        "ports": [
+          "Gestion_Mode_0/BP1_Raz_ala",
+          "Alarm_0/BP1_Raz"
+        ]
+      },
+      "Alarm_0_csc": {
+        "ports": [
+          "Alarm_0/csc",
+          "Aff_7seg_0/csc_ala"
+        ]
+      },
+      "Alarm_0_sec": {
+        "ports": [
+          "Alarm_0/sec",
+          "Aff_7seg_0/sec_ala"
+        ]
+      },
+      "Alarm_0_min": {
+        "ports": [
+          "Alarm_0/min",
+          "Aff_7seg_0/min_ala"
+        ]
+      },
+      "Alarm_0_hrs": {
+        "ports": [
+          "Alarm_0/hrs",
+          "Aff_7seg_0/hrs_ala"
+        ]
+      },
+      "Alarm_0_fnct_alarm": {
+        "ports": [
+          "Alarm_0/fnct_alarm",
+          "LED_fnct_alarm",
+          "Aff_7seg_0/fnct_alarm"
+        ]
+      },
+      "Aff_7seg_0_LED_alarm": {
+        "ports": [
+          "Aff_7seg_0/LED_alarm",
+          "LED_alarm"
+        ]
+      },
+      "sw0_mode_hrs_1": {
+        "ports": [
+          "sw0_mode_hrs",
+          "Aff_7seg_0/sw0_mode_hrs"
+        ]
+      },
+      "Gestion_Mode_0_SWA_1_H": {
+        "ports": [
+          "Gestion_Mode_0/SWA_1_H",
+          "Horloge_0/SWA_1"
+        ]
+      },
+      "Gestion_Mode_0_SWB_1_H": {
+        "ports": [
+          "Gestion_Mode_0/SWB_1_H",
+          "Horloge_0/SWB_1"
+        ]
+      },
+      "Gestion_Mode_0_SWA_2_H": {
+        "ports": [
+          "Gestion_Mode_0/SWA_2_H",
+          "Horloge_0/SWA_2"
+        ]
+      },
+      "Gestion_Mode_0_SWB_2_H": {
+        "ports": [
+          "Gestion_Mode_0/SWB_2_H",
+          "Horloge_0/SWB_2"
+        ]
+      },
+      "BaseDeTemps_0_T_demi_s": {
+        "ports": [
+          "BaseDeTemps_0/T_demi_s",
+          "Aff_7seg_0/T_demi_s"
+        ]
+      },
+      "sw0_mode_1": {
+        "ports": [
+          "sw0_mode",
+          "Gestion_Mode_0/sw0"
+        ]
+      },
+      "Gestion_Mode_0_sw0_mode": {
+        "ports": [
+          "Gestion_Mode_0/sw0_mode",
+          "Aff_7seg_0/sw0_mode",
+          "Horloge_0/sw0_mode"
+        ]
+      },
+      "Gestion_Mode_0_cpt": {
+        "ports": [
+          "Gestion_Mode_0/cpt",
+          "Aff_7seg_0/cpt",
+          "Minuteur_0/cpt",
+          "Alarm_0/cpt",
+          "Horloge_0/cpt"
+        ]
+      },
+      "Minuteur_0_reg_minuteur": {
+        "ports": [
+          "Minuteur_0/reg_minuteur",
+          "Aff_7seg_0/reg_minuteur"
+        ]
+      }
+    }
+  }
+}

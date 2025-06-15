@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Minuteur_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Minuteur" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1278078720fs"></ZoomStartTime>
+      <ZoomEndTime time="1283473721fs"></ZoomEndTime>
+      <Cursor1Time time="20210000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="89"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/TB_Minuteur/H" type="logic">
+      <obj_property name="ElementShortName">H</obj_property>
+      <obj_property name="ObjectShortName">H</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/T1cs" type="logic">
+      <obj_property name="ElementShortName">T1cs</obj_property>
+      <obj_property name="ObjectShortName">T1cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/SWA_1" type="logic">
+      <obj_property name="ElementShortName">SWA_1</obj_property>
+      <obj_property name="ObjectShortName">SWA_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/SWB_1" type="logic">
+      <obj_property name="ElementShortName">SWB_1</obj_property>
+      <obj_property name="ObjectShortName">SWB_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/SWA_2" type="logic">
+      <obj_property name="ElementShortName">SWA_2</obj_property>
+      <obj_property name="ObjectShortName">SWA_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/SWB_2" type="logic">
+      <obj_property name="ElementShortName">SWB_2</obj_property>
+      <obj_property name="ObjectShortName">SWB_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/BP0_fnct" type="logic">
+      <obj_property name="ElementShortName">BP0_fnct</obj_property>
+      <obj_property name="ObjectShortName">BP0_fnct</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/BP1_Raz" type="logic">
+      <obj_property name="ElementShortName">BP1_Raz</obj_property>
+      <obj_property name="ObjectShortName">BP1_Raz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/LED_minuteur" type="logic">
+      <obj_property name="ElementShortName">LED_minuteur</obj_property>
+      <obj_property name="ObjectShortName">LED_minuteur</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/csc" type="array">
+      <obj_property name="ElementShortName">csc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">csc[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/sec" type="array">
+      <obj_property name="ElementShortName">sec[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sec[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/min" type="array">
+      <obj_property name="ElementShortName">min[7:0]</obj_property>
+      <obj_property name="ObjectShortName">min[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/hrs" type="array">
+      <obj_property name="ElementShortName">hrs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hrs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/fnct" type="logic">
+      <obj_property name="ElementShortName">fnct</obj_property>
+      <obj_property name="ObjectShortName">fnct</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/LOAD_1" type="logic">
+      <obj_property name="ElementShortName">LOAD_1</obj_property>
+      <obj_property name="ObjectShortName">LOAD_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/LOAD_2" type="logic">
+      <obj_property name="ElementShortName">LOAD_2</obj_property>
+      <obj_property name="ObjectShortName">LOAD_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/LOAD_3" type="logic">
+      <obj_property name="ElementShortName">LOAD_3</obj_property>
+      <obj_property name="ObjectShortName">LOAD_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/LOAD_4" type="logic">
+      <obj_property name="ElementShortName">LOAD_4</obj_property>
+      <obj_property name="ObjectShortName">LOAD_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/digit" type="other">
+      <obj_property name="ElementShortName">digit</obj_property>
+      <obj_property name="ObjectShortName">digit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/P_int" type="array">
+      <obj_property name="ElementShortName">P_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">P_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/P_del" type="array">
+      <obj_property name="ElementShortName">P_del[7:0]</obj_property>
+      <obj_property name="ObjectShortName">P_del[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/csc_int" type="array">
+      <obj_property name="ElementShortName">csc_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">csc_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/sec_int" type="array">
+      <obj_property name="ElementShortName">sec_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/min_int" type="array">
+      <obj_property name="ElementShortName">min_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">min_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/hrs_int" type="array">
+      <obj_property name="ElementShortName">hrs_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hrs_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/CE_P" type="logic">
+      <obj_property name="ElementShortName">CE_P</obj_property>
+      <obj_property name="ObjectShortName">CE_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Minuteur/UUT/C2" type="logic">
+      <obj_property name="ElementShortName">C2</obj_property>
+      <obj_property name="ObjectShortName">C2</obj_property>
+   </wvobject>
+</wave_config>

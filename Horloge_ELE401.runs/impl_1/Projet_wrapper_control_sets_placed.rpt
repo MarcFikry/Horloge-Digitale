@@ -1,0 +1,124 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Apr  4 16:54:39 2025
+| Host         : Marc_Fikry running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Projet_wrapper_control_sets_placed.rpt
+| Design       : Projet_wrapper
+| Device       : xc7z020
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    46 |
+|    Minimum number of control sets                        |    46 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    46 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |    18 |
+| >= 8 to < 10       |    18 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             208 |           84 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              35 |           12 |
+| Yes          | No                    | No                     |             198 |          102 |
+| Yes          | No                    | Yes                    |              77 |           31 |
+| Yes          | Yes                   | No                     |              38 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                   Enable Signal                   |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+---------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/CPTs/LOAD_1_0              | Projet_i/Minuteur_0/U0/CPTmin/fnct_reg                  |                1 |              4 |         4.00 |
+|  H_IBUF_BUFG |                                                   | Projet_i/Gestion_Mode_0/U0/SWA_1_A_i_1_n_0              |                2 |              4 |         2.00 |
+|  H_IBUF_BUFG |                                                   | Projet_i/Gestion_Mode_0/U0/mode_int_reg[0]_0            |                2 |              4 |         2.00 |
+|  H_IBUF_BUFG |                                                   | Projet_i/Gestion_Mode_0/U0/mode_int_reg[1]_0            |                2 |              5 |         2.50 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/hrs_p[6]_i_2_n_0           | Projet_i/Minuteur_0/U0/hrs_p[6]_i_1_n_0                 |                3 |              5 |         1.67 |
+|  H_IBUF_BUFG |                                                   | Projet_i/BaseDeTemps_0/U0/DIVN1_125/etat[6]_i_1_n_0     |                2 |              6 |         3.00 |
+|  H_IBUF_BUFG | Projet_i/Chronometre_0/U0/CPTcsc/fnct_reg[0]      | Projet_i/Gestion_Mode_0/U0/BP1_Raz_chr                  |                2 |              6 |         3.00 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/csc_p[6]_i_2_n_0           | Projet_i/Minuteur_0/U0/csc_p[6]_i_1_n_0                 |                3 |              6 |         2.00 |
+|  H_IBUF_BUFG | Projet_i/BaseDeTemps_0/U0/DIVN2/E[0]              |                                                         |                2 |              6 |         3.00 |
+|  H_IBUF_BUFG | Projet_i/Chronometre_0/U0/CPTcsc/Qtmp_reg[4]_0[0] | Projet_i/Gestion_Mode_0/U0/BP1_Raz_chr                  |                2 |              6 |         3.00 |
+|  H_IBUF_BUFG | Projet_i/Alarm_0/U0/min_int                       |                                                         |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/CPTcs/p_0_in_1             | Projet_i/Gestion_Mode_0/U0/BP1_Raz_min                  |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/CPThrs/Qtmp[6]_i_1_n_0     | Projet_i/Gestion_Mode_0/U0/BP1_Raz_min                  |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/CPTmin/Qtmp[6]_i_1__0_n_0  | Projet_i/Gestion_Mode_0/U0/BP1_Raz_min                  |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/CPTs/Qtmp[6]_i_1__1_n_0    | Projet_i/Gestion_Mode_0/U0/BP1_Raz_min                  |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/sec_p[6]_i_1_n_0           |                                                         |                4 |              7 |         1.75 |
+|  H_IBUF_BUFG | Projet_i/Minuteur_0/U0/min_p[6]_i_1_n_0           |                                                         |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Alarm_0/U0/hrs_int                       |                                                         |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Aff_7seg_0/U0/hrs_juste_ala[7]_i_2_n_0   | Projet_i/Aff_7seg_0/U0/hrs_juste_ala[7]_i_1_n_0         |                2 |              7 |         3.50 |
+|  H_IBUF_BUFG | Projet_i/Alarm_0/U0/csc_int                       |                                                         |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Alarm_0/U0/sec_int                       |                                                         |                3 |              7 |         2.33 |
+|  H_IBUF_BUFG | Projet_i/Chronometre_0/U0/CPTcsc/CE               | Projet_i/Gestion_Mode_0/U0/BP1_Raz_chr                  |                2 |              7 |         3.50 |
+|  H_IBUF_BUFG | Projet_i/Chronometre_0/U0/CPTcsc/E[0]             | Projet_i/Gestion_Mode_0/U0/BP1_Raz_chr                  |                2 |              7 |         3.50 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTmoi/LOAD_sync_reg_0[0]   |                                                         |                3 |              8 |         2.67 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/csc_p[7]_i_1_n_0            |                                                         |                7 |              8 |         1.14 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/hrs_p[7]_i_1_n_0            |                                                         |                5 |              8 |         1.60 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPThrs/Qtmp[7]_i_1_n_0      |                                                         |                2 |              8 |         4.00 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/ane_p[7]_i_1_n_0            |                                                         |                6 |              8 |         1.33 |
+|  H_IBUF_BUFG | Projet_i/Aff_7seg_0/U0/hrs_juste_hor[7]_i_2_n_0   | Projet_i/Aff_7seg_0/U0/hrs_juste_hor[7]_i_1_n_0         |                4 |              8 |         2.00 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/min_p[7]_i_1_n_0            |                                                         |                4 |              8 |         2.00 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/jrs_p[7]_i_1_n_0            |                                                         |                5 |              8 |         1.60 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/sec_p[7]_i_1_n_0            |                                                         |                5 |              8 |         1.60 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/moi_p[7]_i_1_n_0            |                                                         |                5 |              8 |         1.60 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTmin/Qtmp[7]_i_1__0_n_0   |                                                         |                3 |              8 |         2.67 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTmoi/Qtmp[7]_i_1__3_n_0   |                                                         |                3 |              8 |         2.67 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTcsc/Qtmp[7]_i_1__2_n_0   |                                                         |                3 |              8 |         2.67 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTane/E[0]                 |                                                         |                4 |              8 |         2.00 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTsec/p_0_in               |                                                         |                3 |              8 |         2.67 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/LOAD_8                      | Projet_i/Horloge_0/U0/LOAD_4_i_1_n_0                    |                6 |              8 |         1.33 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/P_ret                       |                                                         |                5 |              8 |         1.60 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/cie_p[7]_i_1_n_0            |                                                         |                5 |              8 |         1.60 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTmoi/E[0]                 |                                                         |                8 |             11 |         1.38 |
+|  H_IBUF_BUFG | Projet_i/BaseDeTemps_0/U0/DIVN1_125/E[0]          |                                                         |                5 |             11 |         2.20 |
+|  H_IBUF_BUFG |                                                   | Projet_i/BaseDeTemps_0/U0/DIVN1_125000/etat[16]_i_1_n_0 |                4 |             16 |         4.00 |
+|  H_IBUF_BUFG | Projet_i/Horloge_0/U0/CPTjrs_28/E[0]              | Projet_i/Horloge_0/U0/Raz_31_reg_n_0                    |               11 |             23 |         2.09 |
+|  H_IBUF_BUFG |                                                   |                                                         |               84 |            208 |         2.48 |
++--------------+---------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+
+

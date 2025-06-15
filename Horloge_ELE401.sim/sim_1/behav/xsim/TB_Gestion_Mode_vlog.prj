@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Horloge_ELE401.ip_user_files/bd/Projet/ip/Projet_xlconstant_0_0/sim/Projet_xlconstant_0_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

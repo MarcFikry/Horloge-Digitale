@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1743778404">
+  <File Type="BITSTR-BMM" Name="Projet_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Projet_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Projet_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Projet_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Projet_wrapper.tcl"/>
+  <File Type="OPT-TIMING" Name="Projet_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Projet_wrapper_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Projet_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Projet_wrapper_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Projet_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Projet_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Projet_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Projet_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Projet_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Projet_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Projet_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Projet_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Projet_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Projet_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Projet_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Projet_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Projet_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Projet_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Projet_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Projet_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Projet_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Projet_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Projet_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Projet_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Projet_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Projet_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Projet_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Projet_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Projet_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Projet_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Projet_wrapper_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Projet_wrapper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Projet_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Projet_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Projet_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Projet_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Projet_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Projet_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Projet_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Projet_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Projet_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Projet_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Projet_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Projet_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Projet_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Projet_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Projet_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Projet_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Projet_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Projet_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Projet_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Projet_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Projet_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Projet_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Projet_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Projet_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="Projet_wrapper.nky"/>
+  <File Type="PDI-FILE" Name="Projet_wrapper.pdi"/>
+  <File Type="RCFI_FILE" Name="Projet_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="Projet_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="Projet_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="Projet_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="Projet_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Projet_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Projet_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="Projet_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="Projet_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="Projet_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/cptMN.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Chronomètre.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DiviseurN.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BaseDeTemps.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Aff_7seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Gestion_Mode.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Minuteur.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Alarm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Horloge.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Projet/Projet.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/Projet/hdl/Projet_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Projet_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Zybo-Z7-ExtensionAffichage.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Projet_BaseDeTemps_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Projet_Horloge_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Projet_Chronometre_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Projet_Aff_7seg_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Projet_Minuteur_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Projet_Gestion_Mode_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Projet_Alarm_0_0"/>
+</GenRun>

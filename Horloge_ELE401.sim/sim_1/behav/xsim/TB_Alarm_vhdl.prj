@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Horloge_ELE401.srcs/sources_1/new/Alarm.vhd" \
+"../../../../Horloge_ELE401.srcs/sim_1/new/TB_Alarm.vhd" \
+
+# Do not sort compile order
+nosort
