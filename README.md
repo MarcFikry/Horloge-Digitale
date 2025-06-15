@@ -1,5 +1,10 @@
 # Horloge Digitale — VHDL Project
 
+## Presentation Link
+
+Check out the project presentation and design overview here:  
+[Horloge Digitale Presentation on Canva](https://www.canva.com/design/DAGjkuY9CuU/3aqjEsbIg8dohLzr9mm8pg/edit)
+
 ## Project Description
 
 This project is a digital clock (Horloge Digitale) designed and implemented using VHDL in Vivado. It serves as a practical application of hardware description language skills and digital system design concepts learned during my studies. The clock displays hours, minutes, and seconds on seven-segment displays, with precise timing and control logic implemented in FPGA.
