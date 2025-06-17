@@ -22,6 +22,12 @@ All features are synchronized and integrated into a modular architecture using V
 
 ---
 
+## System Architecture Diagram
+
+The following diagram provides a high-level overview of the digital clock system and its main components, showing how they interact in real-time on the Zybo Z7-20 FPGA board:
+
+![System Architecture – Projet ELE401](Projet_ELE_401.jpeg)
+
 ## Features
 
 ### Time & Calendar Display
