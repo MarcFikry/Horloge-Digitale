@@ -5,48 +5,135 @@
 Check out the project presentation and design overview here:  
 [Horloge Digitale Presentation on Canva](https://www.canva.com/design/DAGjkuY9CuU/3aqjEsbIg8dohLzr9mm8pg/edit)
 
-## Project Description
+## Description
 
-This project is a digital clock (Horloge Digitale) designed and implemented using VHDL in Vivado. It serves as a practical application of hardware description language skills and digital system design concepts learned during my studies. The clock displays hours, minutes, and seconds on seven-segment displays, with precise timing and control logic implemented in FPGA.
+This project is a fully-featured digital clock system designed in **VHDL** as part of the **ELE401** course. It runs on the **Zybo Z7-20 FPGA board** using a base clock of **125 MHz**, and features:
 
-## Features and Functionality
+- Real-time clock and date display
+- Stopwatch
+- Countdown timer
+- Alarm with configuration
+- Setup mode using encoders
+- Leap year management
+- 12h/24h display format switching
+- Multiplexed 8-digit 7-segment display output
 
-- **Timekeeping:** Accurately counts and displays hours, minutes, and seconds.
-- **Seven-Segment Display Control:** Drives multiple seven-segment displays to show the current time in digital format.
-- **Modular VHDL Design:** Components such as counters, multiplexers, and decoders are designed separately for clarity and reuse.
-- **FPGA Implementation:** Synthesized and tested on an FPGA development board using Vivado.
-- **Reset and Enable Controls:** Supports reset functionality to initialize the clock and enable/disable counting.
+All features are synchronized and integrated into a modular architecture using Vivado.
 
-## Execution and Technologies
+---
 
-- **Hardware Description Language:** VHDL is used for all design and implementation.
-- **Development Environment:** Xilinx Vivado for simulation, synthesis, and implementation.
-- **Target Device:** FPGA board (e.g., Nexys A7 or similar).
-- **Simulation Tools:** Vivado built-in simulator for waveform analysis and functional verification.
-- **Design Methodology:** Modular, hierarchical design separating clock generation, counting, and display driving.
+## Features
 
-## New Skills and Research Areas
+### Time & Calendar Display
 
-- Designing synchronous digital systems with VHDL.
-- Implementing multiplexed seven-segment display controllers.
-- FPGA development flow including synthesis and implementation constraints.
-- Timing analysis and resource optimization on FPGA.
-- Debugging and simulating hardware designs with Vivado.
+- Displays **hours, minutes, seconds, and centiseconds**
+- Supports **calendar mode**: shows **day, month, and year**
+- Leap year logic for accurate day/month handling
+- **12h/24h mode** selection via switch
+  - **PM indicator LED** lights up in 12h PM mode
 
-## Project Roles
+### Setup Mode
 
-- Sole developer and designer of the entire project.
+- Activated with a hardware switch
+- Allows user to configure:
+  - Clock time
+  - Date
+  - Alarm
+  - Timer
+- **Two encoders** used for:
+  - Increment
+  - Decrement
+- In setup mode:
+  - **Two digits blink** to indicate active counter
+  - Setup logic applies across all modes (clock, alarm, timer)
 
-## Outcome Expectations
+### Stopwatch
 
-- **Good Outcome:** A fully working digital clock displaying accurate time with basic reset functionality.
-- **Better Outcome:** Clean modular VHDL code, successful synthesis on FPGA, and well-tested simulation results.
-- **Best Outcome:** Enhanced features such as adjustable time setting, low power consumption, and polished FPGA implementation with a user-friendly interface.
+- Resolution up to **centiseconds**
+- Start, pause, reset features
+- Controlled via shared interface
 
-## Usage
+### Timer
 
-1. Clone this repository.
-2. Open the project in Vivado.
-3. Synthesize and implement the design on your FPGA board.
-4. Run simulations to verify behavior before hardware deployment.
-5. Use the provided constraints file for pin assignments.
+- Countdown with user-configured time
+- LED turns on when timer expires
+- Remains on until reset manually
+
+### Alarm
+
+- Active LED when alarm is set
+- Another LED lights up while alarm rings
+- Alarm must be turned off manually
+
+---
+
+## Display System: `Afficheur` Component
+
+The **`Afficheur`** module handles **everything shown on the 7-segment display**. It is central to the user interface and display logic. Key roles include:
+
+- **Digit multiplexing**:
+  - Refreshes each of the 8 digits every **1 ms** (from a 1 kHz base clock)
+- **Mode-sensitive content**:
+  - Displays **clock time**, **date**, **stopwatch**, **timer**, or **alarm**
+  - Dynamically selects the values to be shown based on the current mode
+- **12h/24h display logic**:
+  - Handles conversion of internal time representation for user display
+  - Adds PM LED feedback when applicable
+- **Blinking selection during setup**:
+  - Active digit pairs are blanked or alternated at **0.5 Hz**
+- **Encoder feedback**:
+  - Reacts to encoder updates in setup mode to update displayed values in real time
+
+This module ensures that the system remains user-friendly and clear regardless of the active mode.
+
+---
+
+## Architecture Overview
+
+The system is composed of the following key VHDL modules:
+
+| Module              | Description |
+|---------------------|-------------|
+| `Horloge.vhd`       | Real-time clock counter |
+| `Chronomètre.vhd`   | Stopwatch logic |
+| `Minuteur.vhd`      | Countdown timer |
+| `Alarm.vhd`         | Alarm comparator |
+| `BaseDeTemps.vhd`   | Clock dividers: generates 1 ms, 1 cs, 0.5 Hz, etc. from 125 MHz |
+| `DiviseurN.vhd`     | Multiplexer-based divider |
+| `Aff_7seg.vhd`      | Core logic for 7-segment output (`Afficheur`) |
+| `Gestion_Mode.vhd`  | Input multiplexer for shared interface across modes |
+| `cptMN.vhd`         | Modular counter with leap year logic |
+
+> `Gestion_Mode.vhd` is **not an FSM**. It acts as a **multiplexer**, selecting signal paths based on the active mode.  
+> `DiviseurN.vhd` is also a **selector** for derived frequencies.
+
+---
+
+## Simulation & Testbenches
+
+Testbenches for individual components are located in:
+
+`Horloge_ELE401.srcs/sim_1/new/`
+
+Available testbenches:
+
+- `TB_Horloge.vhd`
+- `TB_Alarm.vhd`
+- `TB_Minuteur.vhd`
+- `TB_chrono.vhd`
+- `TB_Gestion_Mode.vhd`
+- `TB_cptMN.vhd`
+
+Vivado waveform (`.wcfg`) files are provided for visual simulation.
+
+---
+
+## File Structure
+
+All major design files are inside the project directory:
+
+```plaintext
+Horloge_ELE401.srcs/
+├── sources_1/new/     ← VHDL source components (design modules)
+├── sim_1/new/         ← VHDL testbenches for simulation
+└── constrs_1/new/     ← FPGA constraints file (.xdc) for Zybo Z7-20
